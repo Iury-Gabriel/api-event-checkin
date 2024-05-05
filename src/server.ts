@@ -39,7 +39,10 @@ app.register(fastifySwaggerUi, {
 app.setValidatorCompiler(validatorCompiler)
 app.setSerializerCompiler(serializerCompiler)
 
-app.listen({ port: 3333, host: '0.0.0.0' }).then(() => {
+app.listen({
+    host: '0.0.0.0',
+    port: 3333,
+}).then(() => {
     console.log('HTTP server running')
 })
 
